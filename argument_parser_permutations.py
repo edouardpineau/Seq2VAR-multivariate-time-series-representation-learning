@@ -30,7 +30,7 @@ def argument_parser_seq2var():
     parser.add_argument('--epochs', type=int, default=3000, help='Number of epochs to train.')
     parser.add_argument('--lr', action='store_true', default=1e-3, help='Learning rate.')
     parser.add_argument('--prior', type=int, default=0.1, help='Sparsity prior.')
-    parser.add_argument('--tau', type=int, default=0.5, help='Gumbel softmax temperature.')
+    parser.add_argument('--tau', type=int, default=0.1, help='Gumbel softmax temperature.')
     
     args, unknown = parser.parse_known_args()
     
