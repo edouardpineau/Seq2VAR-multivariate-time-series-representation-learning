@@ -1,4 +1,4 @@
-# Seq2VAR
+# Seq2VAR: multivariate time series representation with relational neural networks and linear autoregressive model
 Code for the paper Seq2VAR submitted at the AALTD workshop of ECML 2019
 
 Warning: 
