@@ -1,6 +1,8 @@
 # Seq2VAR: multivariate time series representation with relational neural networks and linear autoregressive model
 Code for the paper Seq2VAR submitted at the AALTD workshop of ECML 2019
 
+The NRI part is directly taken from https://github.com/ethanfetaya/NRI
+
 Warning: 
 
 - Only the figures of the notebook "Seq2VAR_permutation.ipynb" matches with the one in the paper; notebook "Seq2VAR_homogeneous_springs.ipynb" gives additional illustrations
