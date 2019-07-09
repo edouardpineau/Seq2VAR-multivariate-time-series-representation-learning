@@ -98,7 +98,7 @@ def train_nri(train_loader, encoder, decoder, optimizer, scheduler, args, args_n
 
         for batch_idx, data_variables in enumerate(train_loader):
 
-            data, label = data_variables[:2]
+            data, label, relations = data_variables
             # data = data.unsqueeze(-1)
 
             if args.cuda:
@@ -126,15 +126,17 @@ def train_nri(train_loader, encoder, decoder, optimizer, scheduler, args, args_n
             mse_train.append(((output - target)**2).mean(0).sum().item())
             nll_train.append(loss_nll.item())
             kl_train.append(loss_kl.item())
+            acc_train.append(edge_accuracy(logits.cpu(), relations))
 
         scheduler.step()   
         print('Epoch: {:04d}'.format(epoch),
               'nll_train: {:.10f}'.format(np.mean(nll_train)),
               'kl_train: {:.10f}'.format(np.mean(kl_train)),
-              'mse_train: {:.10f}'.format(np.mean(mse_train)),
+              'mse_train: {:.10f}'.format(np.mean(mse_train)), 
+              'acc_train: {:.10f}'.format(np.mean(acc_train)),
               'time: {:.4f}s'.format(time.time() - t))
         
-
+        
 def G(alpha, tau=1):
     """
     NOTE: from paper "Towards Binary-Valued Gates for Robust LSTM Training"
