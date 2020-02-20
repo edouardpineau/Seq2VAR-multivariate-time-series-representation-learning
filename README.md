@@ -3,7 +3,7 @@ This repository presents the code for [our paper](https://hal.telecom-paristech.
 
 Notebooks "Seq2VAR_permutation.ipynb" and "Seq2VAR_homogeneous_springs.ipynb" contain the code for paper reproduction. Notebook "RNN_overfitting.ipynb" contains results for part 4.1
 
-All the code to reproduce NRI (Kipf, 2018) is directly taken from the [Github page](https://github.com/ethanfetaya/NRI) of the original paper. 
+All the code for the comparison with NRI (Kipf, 2018) directly comes from the [Github page](https://github.com/ethanfetaya/NRI) of the original paper. 
 
 ### Abstract
 
