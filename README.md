@@ -1,5 +1,5 @@
 # Seq2VAR: multivariate time series representation with relational neural networks and linear autoregressive model
-This repository presents the code for [our paper](https://hal.telecom-paristech.fr/hal-02293239) presented at the [AALTD workshop](https://project.inria.fr/aaltd19/accepted-papers/) of ECML/PKDD 2019 and appearing in the [Springer Lecture Notes in Artificial Intelligence proceedings 11986](https://www.springer.com/gp/book/9783030390976).
+This repository presents the code for [our paper](https://hal.telecom-paristech.fr/hal-02293239) presented at the [AALTD workshop](https://project.inria.fr/aaltd19/accepted-papers/) of ECML/PKDD 2019 and appearing in the [Springer Lecture Notes in Artificial Intelligence proceedings 11986](https://rd.springer.com/book/10.1007/978-3-030-39098-3).
 
 Notebooks "Seq2VAR_permutation.ipynb" and "Seq2VAR_homogeneous_springs.ipynb" contain the code for paper reproduction. Notebook "RNN_overfitting.ipynb" contains results for part 4.1
 
